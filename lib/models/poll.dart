@@ -11,9 +11,9 @@ class Poll {
 
   factory Poll.fromJson(Map<String, dynamic> json) {
     return Poll(
-      id: json['id'],
-      question: json['question'],
-      choices: (json['choices'] as List).map((item) => item as String).toList(),
+      id: json['1'],
+      question: json['บุคคลใดที่คุณจะสนับสนุนให้เป็นนายกรัฐมนตรีในการเลือกตั้งครั้งนี้'],
+      choices: (json['นายกรณ์ จาติกวณิช'] as List).map((item) => item as String).toList(),
     );
   }
 }
