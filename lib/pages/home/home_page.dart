@@ -42,16 +42,27 @@ class _HomePageState extends State<HomePage> {
 
           Card(
             child: Padding(
-              padding: const EdgeInsets.only(left: 10.0,top: 10.0,right: 10.0,bottom: 10.0,),
-              child: Text(
-                '1.บุคคลใดที่คุณจะสนับสนุนให้เป็นนายกรัฐมนตรีในการเลือกตั้งครั้งนี้',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14.5,
-                ),
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '1. บุคคลใดที่คุณจะสนับสนุนให้เป็นนายกรัฐมนตรีในการเลือกตั้งครั้งนี้',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14.5,
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  ElevatedButton(
+                    onPressed: () {
+                      // todo: Navigate to vote result page
+                    },
+                    child: Text('ดูผลโหวต'),
+                  ),
+                ],
               ),
             ),
-
           ),
           Card(
             child: Padding(
